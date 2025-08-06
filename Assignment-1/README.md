@@ -1,147 +1,50 @@
-# 🧠 HematoVision: Advanced Blood Cell Classification Using Transfer Learning
+# Personal Portfolio Website - Assignment 1
 
-HematoVision is a web-based deep learning project that uses **transfer learning (VGG16)** to classify human blood cells into five types: **Neutrophil**, **Lymphocyte**, **Monocyte**, **Eosinophil**, and **Basophil**. It is designed to assist medical professionals and labs by automating the process of blood cell classification from microscopic images.
+## 📌 Project Overview
 
----
+This is a basic **Personal Portfolio Website** built using **HTML**. The goal of this project is to demonstrate the foundational web development skills, including the use of tags such as `<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`, headings, paragraphs, lists, links, and sections. 
 
-## 📌 Features
-
-- 🔍 Predicts blood cell type from an uploaded image
-- 🧠 Utilizes VGG16 pre-trained model (Transfer Learning)
-- 🌐 Web interface built with Flask + HTML/CSS
-- ☁️ Dockerized and ready for deployment
-- 🔐 User authentication (login/register)
-- 📥 Model auto-downloaded via gdown from Google Drive
+This static webpage serves as a personal portfolio to introduce myself, showcase my skills, interests, and provide contact information for potential employers or collaborators.
 
 ---
 
-## 📂 Project Structure
+## 🔧 Features Included
 
-```
-HematoVision/
-├── app.py                  # Flask application
-├── Dockerfile              # Docker setup
-├── requirements.txt        # Required Python packages
-├── static/
-│   ├── css/
-│   │   └── style.css
-│   └── uploads/
-├── templates/
-│   ├── index.html
-│   ├── result.html
-│   ├── login.html
-│   └── register.html
-├── hemato_vision_vgg16.h5  # Trained model (downloaded via gdown)
-```
+- ✅ **Title and Heading:** The webpage title is set to `"Your Name - Portfolio"` and the top heading (`<h1>`) displays my name.
+- ✅ **About Me Section:** A short description of who I am, my background, and what makes me unique.
+- ✅ **Skills and Interests:** An unordered and/or ordered list presenting at least 3 personal skills and 3 interests.
+- ✅ **Projects Section:** A section showcasing my work, each with a project title, description, and a working link (if available).
+- ✅ **Contact Info:** My email address and optional social media or portfolio links.
 
 ---
 
-## ⚙️ Technologies Used
+## 📂 Folder Structure
 
-- **Frontend**: HTML, CSS
-- **Backend**: Flask
-- **Deep Learning**: TensorFlow, Keras, VGG16
-- **Image Processing**: OpenCV
-- **Deployment**: Docker + Render
+Assignment1/
+│
+├── portfolio.html # Main HTML file
+├── main.css # Main CSS file
+├── README.md # Project documentation
+└── images/ # Folder to store any personal photos or project screenshots
 
----
 
-## 🧪 Blood Cell Types Detected
+## 🚀 How to Run the Project
 
-- **Neutrophil**
-- **Lymphocyte**
-- **Monocyte**
-- **Eosinophil**
-- **Basophil**
-
----
-## 🔗 Download Pretrained Model
-
-This project requires a trained CNN model file to make predictions.
-
-👉 [Download Blood_Cell_PRED.h5]("https://drive.google.com/file/d/12Bbh3kaEBFsE2WLr3ymufSdu4bfi1WUr/view?usp=drive_link")
-
-Place the file in the root directory of the project (same location as `app.py`).
-
-## 🚀 How to Run Locally
-
-### Step 1: Clone the repository
-
-```bash
-git clone https://github.com/grvenkat40/Blood-Cell-Classification.git
-cd Blood-Cell-Classification
-```
-
-### Step 2: Run using Docker
-
-```bash
-docker build -t hematovision-app .
-docker run -p 5000:5000 hematovision-app
-```
-
-Then open: `http://localhost:5000`
+1. Download or clone the repository to your local machine.
+2. Open `index.html` in any web browser (Chrome, Firefox, etc.).
+3. Explore the sections and links to know more about me!
 
 ---
 
-## 📦 Requirements
+## ✉️ Contact
 
-For manual installation (if not using Docker):
-
-```txt
-flask==2.3.3
-tensorflow==2.10.0
-opencv-python
-gdown
-werkzeug==2.3.7
-numpy
-pandas
-```
+For any questions or collaborations, feel free to reach me at:  
+📧 yourname@example.com  
+🌐 [LinkedIn](https://www.linkedin.com/in/yourprofile) (optional)  
+📁 [GitHub](https://github.com/yourprofile) (optional)
 
 ---
 
-## 📁 Model File
+## 💡 Note
 
-The model `Blood_Cell_PRED.h5` is **automatically downloaded** at runtime using `gdown`. You don’t need to upload it manually.
-
----
-
-## 📸 Sample Use
-
-Upload a microscopic image of a blood smear → The model predicts the cell type → You get a label and confidence score.
-
----
-
-## 🔐 Authentication
-
-Includes basic login and registration system using Flask sessions and SQLite for storing user details.
-
----
-
-## 📈 Results
-
-- ✅ Training Accuracy: **96.6%**
-- ✅ Validation Accuracy: **67.8%**
-- ✅ Real-time prediction within **2 seconds**
-
----
-
-## 🧠 Author
-
-**Goondam Ramalingam Venkat**  
-📧 grvenkat40@gmail.com  
-📍 Siddharth Institute of Engineering & Technology, CSIT
-
----
-
-## 📜 License
-
-This project is part of an internship initiative by **SmartBridge** and is available for educational and research purposes.
-
----
-
-## 🌟 Acknowledgements
-
-- [SmartBridge](https://smartbridge.in)
-- TensorFlow & Keras Team
-- Kaggle (for dataset)
-- Flask & Docker Communities
+This project was created as part of an assignment to demonstrate basic HTML skills. No CSS or JavaScript has been used unless optionally added for enhancement.
