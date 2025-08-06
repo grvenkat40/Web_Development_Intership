@@ -39,7 +39,6 @@ Assignment1/
 ## ✉️ Contact
 
 For any questions or collaborations, feel free to reach me at:  
-📧 yourname@example.com  
-🌐 [LinkedIn](https://www.linkedin.com/in/yourprofile) (optional)  
-📁 [GitHub](https://github.com/yourprofile) (optional)
+📧 grvenkat456@gmail.com  
+🌐 [(https://www.linkedin.com/in/venkatgr/)] 
 
